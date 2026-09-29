@@ -14,16 +14,13 @@ USB serial control of a NEMA 17 stepper motor through an Arduino Nano and an A49
 
 > **WARNING:** The motor starts as soon as `start` is sent. Keep hands clear of the transmission, and send `stop` before reaching in.
 
-> **CAUTION:** The motor and the driver heatsink get hot. Let them cool before touching them.
+> **CAUTION:** The motor driver heatsink gets hot. Let it cool before touching it. 
 
 > **CAUTION:** After `stop`, the motor has no holding torque, so a load can backdrive it.
 
-> **NOTICE:** Connect or disconnect the motor only while the DC supply is removed.
+> **NOTICE:** Disconnect the DC supply before disconnecting the motor. 
 
 > **NOTICE:** Use only a centre-positive DC supply between 8 V and 35 V.
-
-- Missed steps and stalls are not detected.
-- The motor keeps running if the computer disconnects. Do not leave the device running unattended.
 
 ## 2 Specifications
 
@@ -31,6 +28,7 @@ USB serial control of a NEMA 17 stepper motor through an Arduino Nano and an A49
 |---|---|
 | Motor supply | 8 V to 35 V DC, 5.5 mm × 2.1 mm barrel jack, centre-positive |
 | Logic supply | 5 V over Mini-USB |
+| Motor connector | Molex 50-57-9404 |
 | Speed range | 5 rpm to 375 rpm |
 | Microstepping | 1/16 (3200 microsteps per revolution) |
 | Serial | 115200 baud, 8N1 |
@@ -62,8 +60,7 @@ Result: The Serial Monitor shows `Commands: start | stop | cw | ccw | speed <rpm
 - Commands are not case-sensitive and take effect immediately, including while running.
 - At power-up the motor is off, the direction is CW, and the speed is 100 rpm.
 - Speeds outside 5 rpm to 375 rpm are clamped to the nearest limit.
-- Above about 200 rpm, start at a lower speed and raise it in steps to avoid a stall.
-- Reduce the speed before reversing direction.
+- Above about 300 rpm, start at a lower speed and raise it in steps to avoid a stall.
 - Opening the Serial Monitor resets the Nano, which stops the motor and restores the defaults.
 
 ## 5 Troubleshooting
