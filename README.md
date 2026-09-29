@@ -33,7 +33,25 @@ USB serial control of a NEMA 17 stepper motor through an Arduino Nano and an A49
 | Microstepping | 1/16 (3200 microsteps per revolution) |
 | Serial | 115200 baud, 8N1 |
 
-## 3 Setup
+## 3 Components
+
+| Qty | Part | Specification |
+|---|---|---|
+| 1 | Arduino Nano | Rev3, ATmega328P, Mini-USB |
+| 1 | Stepper driver module | Pololu A4988, with heatsink |
+| 1 | Electrolytic capacitor | 100 µF, 50 V |
+| 2 | Ceramic capacitor | 100 nF |
+| 1 | Solderless breadboard | Full size, 830 tie points |
+| 1 | DC jack adapter | Female barrel jack, 5.5 mm × 2.1 mm, with screw terminals |
+| 1 | Motor connector | Molex 50-57-9404 |
+| 1 | Stepper motor | Prusa 2042-000013 |
+| 2 | Motor housing | `left_top`, `left_bottom`, printed in PLA |
+| 2 | Power housing | `right_top`, `right_bottom`, printed in PLA |
+| 8 | Heat-set insert | M2, 3 mm long, 3.5 mm outer diameter |
+| 4 | Screw | M2 × 8 mm, for the motor housing |
+| 4 | Screw | M2 × 16 mm, for the power housing |
+
+## 4 Setup
 
 1. Connect the motor to the Molex 4-pin connector.
 2. Connect the DC supply to the DC-in jack.
@@ -45,7 +63,7 @@ Result: The Serial Monitor shows `Commands: start | stop | cw | ccw | speed <rpm
 
 - If the Nano has no firmware, upload `firmware/firmware.ino` with Tools > Board > Arduino Nano. If the upload fails, select Tools > Processor > ATmega328P (Old Bootloader).
 
-## 4 Operation
+## 5 Operation
 
 ![Serial Monitor session](images/serial_monitor.png)
 
@@ -63,7 +81,7 @@ Result: The Serial Monitor shows `Commands: start | stop | cw | ccw | speed <rpm
 - Above about 300 rpm, start at a lower speed and raise it in steps to avoid a stall.
 - Opening the Serial Monitor resets the Nano, which stops the motor and restores the defaults.
 
-## 5 Troubleshooting
+## 6 Troubleshooting
 
 | Symptom | Remedy |
 |---|---|
