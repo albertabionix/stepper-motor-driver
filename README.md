@@ -43,8 +43,7 @@ USB serial control of a NEMA 17 stepper motor through an Arduino Nano and an A49
 | 2 | Ceramic capacitor | 100 nF |
 | 1 | Solderless breadboard | Full size, 830 tie points |
 | 1 | DC jack adapter | Female barrel jack, 5.5 mm × 2.1 mm, with screw terminals |
-| 1 | Motor connector | Molex 50-57-9404 |
-| 1 | Stepper motor | Prusa 2042-000013 |
+| 1 | Stepper motor with Molex connector | Prusa 2042-000013 |
 | 2 | Motor housing | `left_top`, `left_bottom`, printed in PLA |
 | 2 | Power housing | `right_top`, `right_bottom`, printed in PLA |
 | 8 | Heat-set insert | M2, 3 mm long, 3.5 mm outer diameter |
