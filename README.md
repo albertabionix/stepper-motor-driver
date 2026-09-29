@@ -2,7 +2,9 @@
 
 ![Assembled driver and motor](images/assembled.png)
 
-USB serial control of a NEMA 17 stepper motor through an Arduino Nano and an A4988 driver.
+**Figure 1.** Assembled driver with the motor connected.
+
+USB serial control of a stepper motor using an Arduino Nano and an A4988 driver.
 
 | Directory | Content |
 |---|---|
@@ -50,6 +52,14 @@ USB serial control of a NEMA 17 stepper motor through an Arduino Nano and an A49
 | 4 | Screw | M2 × 8 mm, for the motor housing |
 | 4 | Screw | M2 × 16 mm, for the power housing |
 
+![Enclosure CAD assembly](images/solidworks_assembly.png)
+
+**Figure 2.** Enclosure CAD assembly, with the motor housing on the left and the power housing on the right.
+
+![Breadboard wiring](images/breadboard.png)
+
+**Figure 3.** Breadboard wiring. The upper rail pair carries the motor supply and the lower rail pair carries the 5 V logic supply.
+
 ## 4 Setup
 
 1. Connect the motor to the Molex 4-pin connector.
@@ -65,6 +75,8 @@ Result: The Serial Monitor shows `Commands: start | stop | cw | ccw | speed <rpm
 ## 5 Operation
 
 ![Serial Monitor session](images/serial_monitor.png)
+
+**Figure 4.** Example Serial Monitor session.
 
 | Command | Effect |
 |---|---|
