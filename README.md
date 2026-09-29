@@ -46,15 +46,15 @@ USB serial control of a stepper motor using an Arduino Nano and an A4988 driver.
 | 1 | Solderless breadboard | Full size, 830 tie points |
 | 1 | DC jack adapter | Female barrel jack, 5.5 mm × 2.1 mm, with screw terminals |
 | 1 | Stepper motor with Molex connector | Prusa 2042-000013 |
-| 2 | Motor housing | `left_top`, `left_bottom`, printed in PLA |
-| 2 | Power housing | `right_top`, `right_bottom`, printed in PLA |
+| 2 | Left side housing | `left_top`, `left_bottom`, printed in PLA |
+| 2 | Right side housing | `right_top`, `right_bottom`, printed in PLA |
 | 8 | Heat-set insert | M2, 3 mm long, 3.5 mm outer diameter |
-| 4 | Screw | M2 × 8 mm, for the motor housing |
-| 4 | Screw | M2 × 16 mm, for the power housing |
+| 4 | Screw | M2 × 8 mm, for the left side housing |
+| 4 | Screw | M2 × 16 mm, for the right side housing |
 
 ![Enclosure CAD assembly](images/solidworks_assembly.png)
 
-**Figure 2.** Enclosure CAD assembly, with the motor housing on the left and the power housing on the right.
+**Figure 2.** Enclosure CAD assembly.
 
 ![Breadboard wiring](images/breadboard.png)
 
